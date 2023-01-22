@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useContext } from 'react'
 import { QuizContext } from '../context/quizContext'
 
@@ -6,6 +7,7 @@ import './Welcome.css'
 const Welcome = () => {
   const [quizState, dispatch] = useContext(QuizContext);
 
+ 
   return (
     <div className='welcome'>
       <h1>Olá, seja bem vindo</h1>

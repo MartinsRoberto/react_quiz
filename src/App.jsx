@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import Gameover from './components/Gameover'
 import Questions from './components/Questions'
 import Welcome from './components/Welcome'
@@ -9,6 +9,9 @@ import './App.css'
 const App = () => {
   const [quizState, dispatch] = useContext(QuizContext)
 
+  useEffect(() => {
+    dispatch({type: 'SHUFFLE'})
+  }, [])
   return (
     <div className='container'>
       {quizState.gameStage === 'WELCOME' && <Welcome/>}

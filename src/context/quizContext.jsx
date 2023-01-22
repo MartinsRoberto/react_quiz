@@ -36,7 +36,7 @@ const quizReducer = (state, action) => {
         isSelected: false
       };
     }
-    case "CHECK_ANSWER": {
+    case "CHECK_ANSWER": 
       if(state.isSelected) return state
       const answer = action.payload.answer;
       const option = action.payload.option;
@@ -50,7 +50,17 @@ const quizReducer = (state, action) => {
         score: state.score + i,
         isSelected: true
       }
-    }
+    
+    case "SHUFFLE": 
+      const shuffle = questions.sort(function () {
+        return Math.random() - 0.5;
+      });
+
+      return{
+        ...state,
+        questions: shuffle
+      }
+    
   }
 }
 
