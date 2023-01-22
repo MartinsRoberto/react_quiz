@@ -1,0 +1,27 @@
+.questions{
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px #1a1a1a;
+  transition: .4s;
+}
+.questions p{
+  color: #646cff;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.questions h3{
+  margin-bottom: 1em;
+  padding: 10px;
+}
+.questions li{
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.questions li:hover{
+  background-color: #1a1a1a;
+}

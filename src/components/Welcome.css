@@ -1,0 +1,9 @@
+.welcome h1, .welcome p{
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.welcome .atention{
+  font-size: 0.9em;
+  color: #646cff;
+}
